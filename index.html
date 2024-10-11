@@ -8,6 +8,8 @@
     <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoQU5R5GqvN6B2lb6KpXtKw1hcH/0f/GFuj5dmfGzI5i/Lt" crossorigin="anonymous"></script>
     <title>车牌信息</title>
+</head>
+<body>
     <style>
         .btn {
             width: 300px; /* 固定宽度，使按钮更长 */
@@ -22,11 +24,6 @@
 
         .btn:hover {
             background-color: #003366; /* 改变悬停时的颜色为更深的蓝色 */
-        }
-
-        /* 去掉链接的下划线 */
-        a {
-            text-decoration: none; /* 去掉下划线 */
         }
 
         .popup {
@@ -50,15 +47,12 @@
             alert("用户名和密码错误");
         }
     </script>
-</head>
-<body>
     <div class="top-align">
         <p>车牌号码：陕C0011995</p>
         <p>车主：王怡纯</p>
         <p>院系：经济管理学院</p>
         <div class="container p-0 m-0">
-            <!-- 更新这里，确保使用 data-bs-toggle -->
-            <a href="#demo" data-bs-toggle="collapse" class="no-underline" style="color: blue; background-color: transparent; border: none;">查看详情</a>
+            <a href="#demo" data-bs-toggle="collapse" style="color: blue; background-color: transparent; border: none;">查看详情</a>
             <div id="demo" class="collapse">
                 <div class="container p-0 m-0">
                     <div class="col-md-4">
