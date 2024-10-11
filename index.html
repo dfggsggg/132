@@ -1,0 +1,82 @@
+@ -0,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.net/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <style>
+        .btn {
+            width: 300px; /* 固定宽度，使按钮更长 */
+            padding: 15px;
+            font-size: 16px;
+            background-color: #004085; /* 深蓝色按钮 */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px; /* 圆角按钮 */
+        }
+
+        .btn:hover {
+            background-color: #003366; /* 改变悬停时的颜色为更深的蓝色 */
+        }
+
+        /* 隐藏的黑色弹窗样式 */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* 显示黑色弹窗 */
+        .popup.show {
+            display: block;
+        }
+    </style>
+    <script>
+        function myFunction(){
+            alert("用户名和密码错误");
+        }
+        </script>
+    <div class="top-align">
+        <p>车牌号码：陕C0011995</p>
+        <p>车主：王怡纯</p>
+        <p>院系：经济管理学院</p>
+        <div class="container p-0 m-0">
+            <a href="#demo" data-toggle="collapse" style="color: blue; background-color: transparent; border: none;">查看详情</a>
+            <div id="demo" class="collapse">
+                <div class="container p-0 m-0">
+                        <div class="col-md-4">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="username" class="col-md-3 col-form-label">用户名:</label>
+                                    <div class="col-sm-8"><input class="form-control" id="username" placeholder="">
+                                </div>
+                            </div>
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-3 col-form-label">密码:</label>
+                                    <div class="col-sm-8"><input class="form-control" id="password" placeholder="">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="loginButton" onclick="myFunction()" >登录</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
