@@ -19,7 +19,7 @@
             width: 300px;
             padding: 15px;
             font-size: 16px;
-            background-color: #004085;
+            background-color: #00009c;
             color: white;
             border: none;
             cursor: pointer;
@@ -28,6 +28,15 @@
 
         .btn:hover {
             background-color: #051c6e;
+        }
+
+        /* 控制 h4 标签的字体粗细 */
+        h3 {
+            font-weight: normal; /* 让字体不加粗 */
+        }
+
+        .form-control {
+            border-color: #616e7b; /* 设置深蓝色边框 */
         }
 
         /* 确保输入框和标签在手机上保持同一行显示 */
@@ -52,13 +61,14 @@
 </head>
 <body>
     <div class="container">
-        <h4>车牌号码：陕C0011995</h4>
-        <h4>车主：王怡纯</h4>
-        <h4>院系：经济管理学院</h4>
+        <h3>车牌号码：陕C0011995</h3>
+        <h3>车主：王怡纯</h3>
+        <h3>院系：经济管理学院</h3>
+        <br>
 
         <div class="container p-0 m-0">
             <!-- 使用按钮样式的链接 -->
-            <h4 href="#demo" data-bs-toggle="collapse" style="color: rgb(12, 12, 180); background-color: transparent; border: none;">查看详情</h4>
+            <h3 href="#demo" data-bs-toggle="collapse" style="color: rgb(12, 12, 180); background-color: transparent; border: none;">查看详情</h3>
             
             <!-- 折叠内容 -->
             <div id="demo" class="collapse">
@@ -66,22 +76,25 @@
                     <div class="col-md-6">
                         <!-- 表单部分 -->
                         <form>
-                            <div class="form-group row">
-                                <label for="username" class="col-3 col-form-label"><h4>用户名:</h4></label>
-                                <div class="col-5">
-                                    <input type="text" class="form-control" id="username" placeholder="">
+                            <!-- 用户名 -->
+                            <div class="row mb-3">
+                                <label for="username" class="col-3 col-form-label"><h3>用户名:</h3></label>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="username" placeholder="" style="margin-left: -10px;">
                                 </div>
                             </div>
 
-                            <div class="form-group row mt-3">
-                                <label for="password" class="col-3 col-form-label"><h4>密码:</h4></label>
-                                <div class="col-5">
-                                    <input type="password" class="form-control" id="password" placeholder="">
+                            <!-- 密码 -->
+                            <div class="row mb-3">
+                                <label for="password" class="col-3 col-form-label"><h3>&nbsp; 密码:</h3></label>
+                                <div class="col-6">
+                                    <input type="password" class="form-control" id="password" placeholder="" style="margin-left: -10px;">
                                 </div>
                             </div>
 
-                            <div class="form-group mt-3">
-                                <button type="submit" class="btn btn-primary" id="loginButton" onclick="myFunction()">查 询</button>
+                            <!-- 查询按钮 -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" id="loginButton" onclick="myFunction()"><h3>查 询</h3></button>
                             </div>
                         </form>
                     </div>
